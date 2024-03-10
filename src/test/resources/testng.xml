@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Trip Advisor Header" verbose="1" >
+    <test name="Test Header"   >
+        <packages>
+            <package name="com.qaminds.tests.home.header" />
+            <package name="com.qaminds.tests.home.menuOptions" />
+            <package name="com.qaminds.tests.Search.hotels"/>
+        </packages>
+    </test>
+</suite>
+

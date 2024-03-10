@@ -1,0 +1,22 @@
+<configuration>
+    <!-- Definir el nivel de log general -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+    </root>
+
+    <!-- Muestra los mensajes Debug de qaminds -->
+    <logger name="com.qaminds" level="DEBUG"/>
+
+    <!-- Suprimir los mensajes de logback -->
+    <statusListener class="ch.qos.logback.core.status.NopStatusListener" />
+
+    <!-- Suprimir los mensajes de WebDriverManager -->
+    <logger name="io.github.bonigarcia.wdm.WebDriverManager" level="WARN"/>
+
+    <!-- Appender para imprimir mensajes en la consola -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+</configuration>
