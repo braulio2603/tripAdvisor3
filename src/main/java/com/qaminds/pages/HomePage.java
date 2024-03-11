@@ -61,7 +61,7 @@ public class HomePage {
     public String getTitleSearch(WebDriver driver){
         return WaitHelper.waitForElementByWebElement(driver,titleSearchHotels, Duration.ofSeconds(10),Duration.ofSeconds(2)).getAttribute("placeholder");
     }
-    @FindBy(css = "div.pCeGb.u")
+    @FindBy(css = "#lithium-root > header > div > nav > div.oqeTs.u > a > picture:nth-child(2) > img")
     public WebElement logo;
     @FindBy(css = "button:nth-child(2) > span > a")
     public WebElement optionHotels;

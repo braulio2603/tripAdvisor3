@@ -66,7 +66,7 @@ public class BaseTest {
             ReporterManager.extentFlush();
         }
         log.info("Close browser");
-        getDriver().quit();
+       // getDriver().quit();
     }
     @AfterSuite
     public void afterSuite(){
